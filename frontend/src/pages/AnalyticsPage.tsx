@@ -6,7 +6,7 @@ import { YearBarChart } from '../features/analytics/YearBarChart';
 import { Card } from '../components/ui/Card';
 import { Skeleton } from '../components/ui/Skeleton';
 import { getYearLabel } from '../utils/formatters';
-import { BarChart2, PieChart as PieIcon, Award, ShieldAlert } from 'lucide-react';
+import { BarChart2, PieChart as PieIcon } from 'lucide-react';
 
 export const AnalyticsPage: React.FC = () => {
   const { data: stats, isLoading, error } = useQuery({

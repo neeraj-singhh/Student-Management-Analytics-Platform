@@ -11,7 +11,6 @@ import {
   Plus
 } from 'lucide-react';
 import { Student } from '../../types';
-import { Badge } from '../../components/ui/Badge';
 import { Button } from '../../components/ui/Button';
 import { Skeleton } from '../../components/ui/Skeleton';
 import { Pagination } from '../../components/ui/Pagination';

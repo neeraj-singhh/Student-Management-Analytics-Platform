@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Card } from '../components/ui/Card';
-import { ShieldCheck, User, Mail, KeyRound, Award, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, KeyRound, CheckCircle2 } from 'lucide-react';
 import { Badge } from '../components/ui/Badge';
 
 export const ProfilePage: React.FC = () => {

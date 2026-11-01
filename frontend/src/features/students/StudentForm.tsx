@@ -7,7 +7,7 @@ import { Input } from '../../components/ui/Input';
 import { Select } from '../../components/ui/Select';
 import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
-import { Hash, User, Mail, Phone, BookOpen, Calendar, Save } from 'lucide-react';
+import { Hash, User, Mail, Phone, Save } from 'lucide-react';
 
 const studentSchema = z.object({
   enrollmentNumber: z

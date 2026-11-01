@@ -10,9 +10,7 @@ import {
   BookOpen, 
   GraduationCap, 
   Calendar, 
-  Hash, 
-  Clock,
-  ShieldCheck 
+  Clock 
 } from 'lucide-react';
 import { studentsApi } from '../api/students';
 import { Button } from '../components/ui/Button';
