@@ -1,6 +1,6 @@
 # EduPulse — Full-Stack Student Management & Analytics System
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-09neer--lab%2FStudent--Management--Analytics--Platform-181717?logo=github&logoColor=white)](https://github.com/09neer-lab/Student-Management-Analytics-Platform)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-neeraj--singhh%2FStudent--Management--Analytics--Platform-181717?logo=github&logoColor=white)](https://github.com/neeraj-singhh/Student-Management-Analytics-Platform)
 [![Spring Boot 3.2](https://img.shields.io/badge/Spring_Boot-3.2.0-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Java 17](https://img.shields.io/badge/Java-17_LTS-ED8B00?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![React 18](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
@@ -177,7 +177,7 @@ Student-management/
 Clone the repository and launch the entire multi-service stack with a single command:
 
 ```bash
-git clone https://github.com/09neer-lab/Student-Management-Analytics-Platform.git
+git clone https://github.com/neeraj-singhh/Student-Management-Analytics-Platform.git
 cd Student-Management-Analytics-Platform
 docker-compose up --build
 ```

@@ -1,6 +1,6 @@
 # Resume Project Entry & Portfolio Guide
 
-**Repository Link**: [https://github.com/09neer-lab/Student-Management-Analytics-Platform](https://github.com/09neer-lab/Student-Management-Analytics-Platform)  
+**Repository Link**: [https://github.com/neeraj-singhh/Student-Management-Analytics-Platform](https://github.com/neeraj-singhh/Student-Management-Analytics-Platform)  
 **Target Roles**: Frontend Developer / React Developer / Full-Stack Engineer  
 
 ---
@@ -8,7 +8,7 @@
 ## 📄 Resume Project Section (Copy & Paste Ready)
 
 ### **EduPulse — Full-Stack Student Management & Analytics Platform**
-**GitHub**: [github.com/09neer-lab/Student-Management-Analytics-Platform](https://github.com/09neer-lab/Student-Management-Analytics-Platform)  
+**GitHub**: [github.com/neeraj-singhh/Student-Management-Analytics-Platform](https://github.com/neeraj-singhh/Student-Management-Analytics-Platform)  
 **Tech Stack**: React 18, TypeScript, Tailwind CSS, TanStack Query (React Query), React Hook Form, Zod, Recharts, Spring Boot 3.2, Java 17, PostgreSQL, Flyway, JWT, Docker
 
 - **Engineered a High-Performance React 18 SPA** using TypeScript, Tailwind CSS, and TanStack Query (v5), implementing stale-while-revalidate caching and automatic cache invalidation on mutations to eliminate redundant network traffic.
@@ -32,3 +32,4 @@
 
 4. **Database & Infrastructure:**
    > *"Relational schema evolution is version-controlled via Flyway migrations (`V1` and `V2`), eliminating manual DDL alterations and guaranteeing parity across local Docker containers and production deployments."*
+
