@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Relational Database Service
+  postgres:
+    image: postgres:16-alpine
+    container_name: edupulse-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: studentdb
+      POSTGRES_USER: ${DB_USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres_secure_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME:-postgres} -d studentdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - edupulse-net
+
+  # Spring Boot 3.2 Backend Service
+  backend:
+    build:
+      context: ./student-management
+      dockerfile: Dockerfile
+    container_name: edupulse-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/studentdb
+      DB_USERNAME: ${DB_USERNAME:-postgres}
+      DB_PASSWORD: ${DB_PASSWORD:-postgres_secure_password}
+      JWT_SECRET: ${JWT_SECRET:-404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+      JWT_EXPIRATION_MS: ${JWT_EXPIRATION_MS:-86400000}
+      CORS_ALLOWED_ORIGINS: "http://localhost,http://localhost:5173,http://localhost:3000"
+    ports:
+      - "8080:8080"
+    networks:
+      - edupulse-net
+
+  # React 18 / Vite / Nginx Frontend Service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: edupulse-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - edupulse-net
+
+networks:
+  edupulse-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
