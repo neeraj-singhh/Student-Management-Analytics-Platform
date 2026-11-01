@@ -67,3 +67,4 @@ public class AuthResponseDTO {
         this.role = role;
     }
 }
+

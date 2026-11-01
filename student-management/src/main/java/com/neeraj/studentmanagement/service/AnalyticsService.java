@@ -6,3 +6,4 @@ public interface AnalyticsService {
 
     StudentStatsDTO getStudentStats();
 }
+

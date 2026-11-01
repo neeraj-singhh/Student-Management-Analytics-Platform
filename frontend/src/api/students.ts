@@ -46,3 +46,4 @@ export const studentsApi = {
     await apiClient.delete(`/students/${id}`);
   },
 };
+

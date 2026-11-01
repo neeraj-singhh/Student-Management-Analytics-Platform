@@ -112,3 +112,4 @@ public class StudentController {
         return ResponseEntity.ok(analyticsService.getStudentStats());
     }
 }
+

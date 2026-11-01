@@ -105,3 +105,4 @@ export const EditStudentPage: React.FC = () => {
     </div>
   );
 };
+

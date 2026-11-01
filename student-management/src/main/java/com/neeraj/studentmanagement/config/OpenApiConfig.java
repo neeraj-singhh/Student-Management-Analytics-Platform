@@ -37,3 +37,4 @@ public class OpenApiConfig {
                                         .description("Enter your JWT Bearer token obtained from /api/auth/login")));
     }
 }
+

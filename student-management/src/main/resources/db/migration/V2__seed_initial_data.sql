@@ -26,3 +26,4 @@ VALUES
 ('EN2024011', 'Devansh Roy', 'devansh.roy@university.edu', '+91 9876543220', 'Mechanical', 1, CURRENT_TIMESTAMP - INTERVAL '10 days', CURRENT_TIMESTAMP),
 ('EN2024012', 'Tanvi Desai', 'tanvi.desai@university.edu', '+91 9876543221', 'Civil', 3, CURRENT_TIMESTAMP - INTERVAL '85 days', CURRENT_TIMESTAMP)
 ON CONFLICT (enrollment_number) DO NOTHING;
+

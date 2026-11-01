@@ -70,3 +70,4 @@ export const YearBarChart: React.FC<YearBarChartProps> = ({ data }) => {
     </Card>
   );
 };
+

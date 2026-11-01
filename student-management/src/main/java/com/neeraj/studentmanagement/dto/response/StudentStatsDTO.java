@@ -52,3 +52,4 @@ public class StudentStatsDTO {
         this.recentlyAdded = recentlyAdded;
     }
 }
+

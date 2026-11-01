@@ -27,3 +27,4 @@ CREATE INDEX IF NOT EXISTS idx_students_year ON students(academic_year);
 CREATE INDEX IF NOT EXISTS idx_students_enrollment ON students(enrollment_number);
 CREATE INDEX IF NOT EXISTS idx_students_email ON students(email);
 CREATE INDEX IF NOT EXISTS idx_students_name ON students(name);
+

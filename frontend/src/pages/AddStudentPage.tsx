@@ -72,3 +72,4 @@ export const AddStudentPage: React.FC = () => {
     </div>
   );
 };
+

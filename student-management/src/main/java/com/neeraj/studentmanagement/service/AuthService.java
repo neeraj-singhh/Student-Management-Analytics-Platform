@@ -10,3 +10,4 @@ public interface AuthService {
 
     AuthResponseDTO register(RegisterRequestDTO request);
 }
+

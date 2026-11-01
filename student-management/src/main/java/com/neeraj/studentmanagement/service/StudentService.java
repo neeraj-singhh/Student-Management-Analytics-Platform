@@ -19,3 +19,4 @@ public interface StudentService {
     Page<StudentResponseDTO> searchAndFilter(String keyword, String branch, Integer year, 
                                             int page, int size, String sortBy, String direction);
 }
+

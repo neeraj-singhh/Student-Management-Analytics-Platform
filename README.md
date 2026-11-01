@@ -232,3 +232,4 @@ npm run build
 2. **Form Engineering**: Leveraged **React Hook Form** coupled with **Zod** schema resolvers to ensure zero unnecessary component re-renders while strictly enforcing client-side validation that matches the backend's Jakarta Bean Validation rules.
 3. **Security & Authorization**: Configured stateless **JWT authentication** with role-based route guards on the React client and Spring Security method-level annotations (`@PreAuthorize`) on the backend.
 4. **Relational Database Migrations**: Integrated **Flyway** for deterministic database version control across development and production environments.
+

@@ -161,3 +161,4 @@ export const StudentForm: React.FC<StudentFormProps> = ({
     </Card>
   );
 };
+

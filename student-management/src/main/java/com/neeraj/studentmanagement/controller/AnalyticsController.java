@@ -28,3 +28,4 @@ public class AnalyticsController {
         return ResponseEntity.ok(analyticsService.getStudentStats());
     }
 }
+

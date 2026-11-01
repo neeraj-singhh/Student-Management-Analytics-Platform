@@ -9,3 +9,4 @@ public class StudentNotFoundException extends RuntimeException {
         super("Student not found with ID: " + id);
     }
 }
+

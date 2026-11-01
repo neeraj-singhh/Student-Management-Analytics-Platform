@@ -12,3 +12,4 @@ class StudentManagementApplicationTests {
     void contextLoads() {
     }
 }
+

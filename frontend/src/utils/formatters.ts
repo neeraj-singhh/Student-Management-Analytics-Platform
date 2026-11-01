@@ -57,3 +57,4 @@ export function getYearLabel(year: number): string {
     default: return `Year ${year}`;
   }
 }
+

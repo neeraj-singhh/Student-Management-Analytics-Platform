@@ -46,3 +46,4 @@ jobs:
     - name: TypeScript Typecheck & Build
       working-directory: ./frontend
       run: npm run build
+
